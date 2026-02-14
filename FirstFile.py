@@ -1,2 +1,2 @@
 def hello():
-    print("Hello, world!")
+    print("Hello, I'm learning Git!")
