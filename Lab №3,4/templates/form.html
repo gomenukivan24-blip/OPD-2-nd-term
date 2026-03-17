@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .note {
+            text-align: center;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Социальный опрос</h1>
+
+    <form action="" method="post">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+
+        <label for="age">Ваш возраст:</label>
+        <input type="number" id="age" name="age" required min="1" max="120" placeholder="Введите ваш возраст">
+
+        <label for="city">Город проживания:</label>
+        <input type="text" id="city" name="city" required placeholder="Введите ваш город">
+
+        <label for="hobby">Ваше хобби:</label>
+        <input type="text" id="hobby" name="hobby" required placeholder="Чем вы любите заниматься?">
+
+        <label for="reason">Расскажите немного о себе:</label>
+        <textarea id="reason" name="reason" required placeholder="Что-нибудь запоминающееся о вас..."></textarea>
+
+        <input type="submit" value="Отправить анкету">
+    </form>
+
+    <div class="note">
+        <p>Ваши ответы будут сохранены и доступны для просмотра</p>
+    </div>
+</body>
+</html>
